@@ -40,7 +40,7 @@ var NavigationView = View.extend({
    */
   onClick: function(event) {
     if (event.target.hasAttribute('data-page')) {
-      this.emit('goto', event.target.getAttribute('data-page'));
+      this.emit('navigate', event.target.getAttribute('data-page'));
     }
   }
 
