@@ -1,0 +1,13 @@
+{
+  "name": "navigation",
+  "scripts": [
+    "index.js"
+  ],
+  "images": [
+    "img/tick-grey.svg",
+    "img/tick-grey.png"
+  ],
+  "dependencies": {
+    "digitaledgeit/js-view": "0.1.4"
+  }
+}
