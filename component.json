@@ -4,7 +4,7 @@
     "index.js"
   ],
   "dependencies": {
-    "digitaledgeit/js-view": "0.1.4"
+    "digitaledgeit/js-view": "~0.1.5"
   },
   "development": {
     "dependencies": {
