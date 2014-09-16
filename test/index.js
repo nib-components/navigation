@@ -1,5 +1,5 @@
-var assert      = require('assert');
-var navigation  = require('navigation');
+var assert          = require('assert');
+var NavigationView  = require('navigation');
 
 describe('navigation', function() {
 
@@ -16,7 +16,7 @@ describe('navigation', function() {
       '</ul>'
     ;
 
-    view = navigation({ el: element });
+    view = new NavigationView({ el: element });
 
     document.body.appendChild(view.el); //necessary for events to fire
   });
