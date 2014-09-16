@@ -8,8 +8,8 @@ HTML:
 
     <div class="js-navigation">
         <ul>
-            <li><a class="js-nav-item" data-page="page-name-1">OMG Page 1</a></li>
-            <li><a class="js-nav-item" data-page="page-name-2">OMG Page 2</a></li>
+            <li class="js-nav-item" data-page="page-name-1"><a>OMG Page 1</a></li>
+            <li class="js-nav-item" data-page="page-name-2"><a>OMG Page 2</a></li>
         </ul>
     </div>
 
