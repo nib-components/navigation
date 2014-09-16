@@ -11,8 +11,8 @@ describe('navigation', function() {
     element = document.createElement('div');
     element.innerHTML =
       '<ul>' +
-        '<li class="nav-item"><a class="nav-item__link js-nav-item js-nav-item-1" data-page="page-name-1">OMG Page 1</a></li>' +
-        '<li class="nav-item"><a class="nav-item__link js-nav-item js-nav-item-2" data-page="page-name-2">OMG Page 2</a></li>' +
+        '<li class="nav-item js-nav-item js-nav-item-1" data-page="page-name-1"><a>OMG Page 1</a></li>' +
+        '<li class="nav-item js-nav-item js-nav-item-2" data-page="page-name-2"><a>OMG Page 2</a></li>' +
       '</ul>'
     ;
 

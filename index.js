@@ -128,10 +128,10 @@ var NavigationView = View.extend({
    * @param   {MouseEvent} event
    */
   onClick: function(event) {
-    if (event.target.hasAttribute('data-page')) {
+    if (event.delegateTarget.hasAttribute('data-page')) {
 
       //get the menu item name
-      var name = event.target.getAttribute('data-page');
+      var name = event.delegateTarget.getAttribute('data-page');
 
       //check the menu item is not disabled
       if (this.isDisabled(name)) {
