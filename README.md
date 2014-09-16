@@ -1,21 +1,51 @@
-navigation
-==========
+# navigation
 
-Navigation component for navigating around the places.
+Component for programatically changing the state of navigation lists.
 
-Markup
-======
+## Usage
 
-    <div class="quote-nav js-navigation">
-        <ul class="nav nav--horizontal">
-            <li class="nav-item"><a class="nav-item__link js-nav-item" href="/some/place/else" data-page="page-name-1">OMG Page 1</a></li>
-            <li class="nav-item"><a class="nav-item__link js-nav-item" href="/some/place/else/else" data-page="page-name-2">OMG Page 2</a></li>
+HTML:
+
+    <div class="js-navigation">
+        <ul>
+            <li><a class="js-nav-item" data-page="page-name-1">OMG Page 1</a></li>
+            <li><a class="js-nav-item" data-page="page-name-2">OMG Page 2</a></li>
         </ul>
     </div>
 
-Usage
-=====
+JavaScript:
 
-    var navigationView = require('navigation')({
+    var View = require('navigation');
+    var view = new View({
       el: document.querySelector('.js-navigation')
     });
+
+## API
+
+### new View(options)
+
+Create a new navigation view.
+
+- options.el - The navigation element
+
+### .isCurrent(page)
+
+Get whether the menu item for the specified page is the currently selected menu item.
+
+### .setCurrent(page)
+
+Set the specified page as the currently selected menu item.
+
+### .isDisabled(page)
+
+Get whether the menu item is disabled.
+
+### .setDisabled(page, disabled)
+
+Set whether the menu item is disabled.
+
+### Events
+
+#### navigate
+
+Emitted when a menu item is not disabled and is clicked.
