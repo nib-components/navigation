@@ -16,8 +16,14 @@ HTML:
 JavaScript:
 
     var View = require('navigation');
+
     var view = new View({
       el: document.querySelector('.js-navigation')
+    });
+
+    view.on('navigate', function(page) {
+        //do something... e.g.
+        spaPageCollection.navigate(page);
     });
 
 ## API
