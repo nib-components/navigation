@@ -1,0 +1,18 @@
+{
+  "name": "@nib-components/navigation",
+  "version": "1.0.1",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:nib-components/navigation.git"
+  },
+  "dependencies": {
+    "digitaledgeit-view": "~0.1.5"
+  },
+  "devDependencies": {
+    "assert": "*"
+  },
+  "browser": {
+    "view": "digitaledgeit-view"
+  }
+}
